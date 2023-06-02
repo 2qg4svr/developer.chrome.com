@@ -8,7 +8,7 @@ description: >
    Run unified experiments across Attribution Reporting, Protected Audience API,
    Topics, Fenced Frames, and Shared Storage.
 date: 2022-09-08
-updated: 2023-03-13
+updated: 2023-06-02
 authors:
   - anusmitaray
   - kevinkiklee
@@ -30,6 +30,110 @@ through the configuration steps to access the APIs, tells you how to validate
 your configuration, and provides further resources for testing against the APIs.
 
 ## Check the status of the origin trial {: #status}
+
+### June 2023
+
+#### Private Aggregation 7% ramp-up in Stable
+
+Private Aggregation API origin trial will be available at 7% of Chrome Stable unified experiment traffic from Tuesday, June 6th 2023. The API will be available in the unified origin trial (5%), Protected Audience isolated trial (1%), and Shared Storage isolated trial (1%).
+
+The traffic allocation will look like the following starting on Tuesday, June 6:
+
+<table>
+  <tr>
+   <td><strong>API</strong>
+   </td>
+   <td><strong>Traffic allocation</strong>
+   </td>
+   <td><strong>Status</strong>
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="2">Attribution Reporting 
+   </td>
+   <td>Unified - 5%
+   </td>
+   <td rowspan="2">6% of the Stable traffic starting from March 13, 2023
+   </td>
+  </tr>
+  <tr>
+   <td>Isolated - 1% - ARA only
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="3">Fenced Frames
+   </td>
+   <td>Unified - 5%
+   </td>
+   <td rowspan="3">7% of the Stable traffic starting from March 13, 2023
+   </td>
+  </tr>
+  <tr>
+   <td>Isolated - 1% - Shared Storage + Private Aggregation + Fenced Frames only
+   </td>
+  </tr>
+  <tr>
+   <td>Isolated - 1% - Protected Audience + Private Aggregation + Fenced Frames only
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="2">Protected Audience
+   </td>
+   <td>Unified - 5% 
+   </td>
+   <td rowspan="2">6% of the Stable traffic starting from March 13, 2023
+   </td>
+  </tr>
+  <tr>
+   <td>Isolated - 1% - Protected Audience + Private Aggregation + Fenced Frames only
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="3">Private Aggregation
+   </td>
+   <td>Unified - 5% 
+   </td>
+   <td rowspan="3">7% of the Stable traffic starting from April 17, 2023
+   </td>
+  </tr>
+  <tr>
+    <td>Isolated - 1% - Protected Audience + Private Aggregation + Fenced Frames only
+    </td>
+    </tr>
+    <tr>
+    <td>Isolated - 1% - Shared Storage + Private Aggregation + Fenced Frames only
+    </td>
+  </tr>
+  <tr>
+   <td rowspan="2">Shared Storage
+   </td>
+   <td>Unified - 5%
+   </td>
+   <td rowspan="2">6% of the Stable traffic starting from March 13, 2023
+   </td>
+  </tr>
+  <tr>
+   <td>Isolated - 1% - Shared Storage + Private Aggregation + Fenced Frames only
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="2">Topics
+   </td>
+   <td>Unified - 5%
+   </td>
+   <td rowspan="2">6% of the Stable traffic starting from March 13, 2023
+   </td>
+  </tr>
+  <tr>
+   <td>Isolated - 1% - Topics only
+   </td>
+  </tr>
+</table>
+
+{% Details %} {% DetailsSummary %}
+### Previous updates
+
+Check out previous updates on the origin trial. {% endDetailsSummary %}
 
 ### April 2023
 
@@ -350,11 +454,6 @@ Also, Shared Storage’s URL Selection API origin trial will be increasing to 5%
    </td>
   </tr></tbody>
 </table>
-
-{% Details %} {% DetailsSummary %}
-### Previous updates
-
-Check out previous updates on the origin trial. {% endDetailsSummary %}
 
 #### November 2022
 
